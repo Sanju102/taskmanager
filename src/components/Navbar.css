@@ -1,0 +1,257 @@
+.navbar {
+  background-color: rgba(0, 128, 0, 0.25); /* Green with 25% opacity */
+  padding: 1rem 2rem;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  color: #333; /* Changed to dark gray */
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-menu {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+  justify-content: flex-start;
+  margin-left: 2rem;
+}
+
+.nav-item {
+  margin-right: 1rem;
+}
+
+.nav-link {
+  color: #333; /* Changed to dark gray */
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #000; /* Darker on hover */
+}
+
+.nav-link.active {
+  font-weight: bold;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  color: #333; /* Changed to dark gray */
+}
+
+.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.user-icon {
+  margin-right: 0.5rem;
+}
+
+.username {
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  color: #333; /* Changed to dark gray */
+}
+
+.dropdown-icon {
+  font-size: 0.8rem;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0.5rem 0;
+  margin-top: 0.5rem;
+  list-style-type: none;
+  z-index: 1000;
+  min-width: 150px; /* Increased minimum width */
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.dropdown-menu li {
+  padding: 0.5rem 1rem;
+}
+
+.dropdown-menu li a {
+  color: #333; /* Already dark */
+  text-decoration: none;
+  display: block; /* Make the entire area clickable */
+}
+
+.dropdown-menu li a:hover {
+  color: #000; /* Darker on hover */
+  background-color: #f8f9fa; /* Add background color on hover */
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #333; /* Changed to dark gray */
+}
+
+.search-input {
+  padding: 0.5rem 0.5rem 0.5rem 2rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 200px;
+  transition: width 0.3s ease-in-out;
+  color: #333; /* Changed to dark gray */
+}
+
+.search-input::placeholder {
+  color: #666; /* Slightly lighter for placeholder */
+}
+
+.search-input:focus {
+  width: 250px;
+  outline: none;
+  box-shadow: 0 0 0 2px #007bff;
+}
+
+.search-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+.notification-container {
+  position: relative;
+  margin-right: 1rem;
+  cursor: pointer;
+  display: inline-block; /* Changed from flex to inline-block */
+}
+
+.notification-icon {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.notification-badge {
+  position: absolute; /* Changed back to absolute */
+  top: -8px; /* Adjust this value as needed */
+  right: -8px; /* Adjust this value as needed */
+  background-color: #ff4d4f;
+  color: white;
+  border-radius: 50%;
+  padding: 1px 5px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  min-width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0; /* Removed margin */
+}
+
+.login-button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+.login-container {
+  max-width: 300px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.login-container h2 {
+  margin-bottom: 1rem;
+}
+
+.login-container form div {
+  margin-bottom: 1rem;
+}
+
+.login-container label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+  background-color: #0056b3;
+}
+
+.logout-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 10px;
+  transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+  background-color: #d32f2f;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}

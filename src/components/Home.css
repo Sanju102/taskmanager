@@ -1,0 +1,27 @@
+
+#welcome-card {
+width: 18rem;
+margin-left: 3rem;
+}
+
+#task-summary-card {
+    justify-content: center;
+    width: 30rem;
+}
+
+#home-container { 
+    display: flex;
+}
+
+#open-tasks-card {
+    width: 12rem;
+    height: 6rem;
+}
+
+#delayed-tasks-card {
+    width: 12rem;
+    height: 6rem;
+}
+    
+
+
